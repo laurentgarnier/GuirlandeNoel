@@ -21,7 +21,7 @@ int nombreBoucle = 0;
 
 unsigned long dernierTemps = 0;
 
-const int nombreEffet = 14;
+const int nombreEffet = 15;
 String listeDesEffets[nombreEffet];
 int selectedEffect = 11;
 int lastEffect = 11;
@@ -52,6 +52,7 @@ void setup()
   listeDesEffets[11] = "Arc en ciel par zone";
   listeDesEffets[12] = "Noel avec fondu";
   listeDesEffets[13] = "OL";
+  listeDesEffets[14] = "Reperes";
 
   initialiserBluetooth();
 
@@ -161,6 +162,11 @@ void loop()
     case 13 :
     {
       OLFadeInOut();
+      break;
+    }
+    case 14 :
+    {
+      AfficherLedsRepere();
       break;
     }
     default :
