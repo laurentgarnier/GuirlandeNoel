@@ -114,26 +114,27 @@ void AfficherLedsRepere()
   setPixel(62, 255,255,255);
   setPixel(82, 255,255,255);
   setPixel(94, 255,255,255);
-
+  
   // Les leds rouges (1/4)
   setPixel(8,  255,0,0);
   setPixel(41, 255,0,0);
   setPixel(66, 255,0,0);
   setPixel(84, 255,0,0);
   setPixel(95, 255,0,0);
-
+  
   // Les leds vertes (1/4)
   setPixel(17,  0,255,0);
   setPixel(48, 0,255,0);
   setPixel(71, 0,255,0);
   setPixel(87, 0,255,0);
   setPixel(97, 0,255,0);
-
+  
   // Les leds bleues (1/4)
   setPixel(26, 0,0,255);
   setPixel(55, 0,0,255);
   setPixel(76, 0,0,255);
   setPixel(90, 0,0,255);
   setPixel(98, 0,0,255);
-
+  showStrip();
+  delay(1000);
 }
