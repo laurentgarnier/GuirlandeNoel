@@ -6,7 +6,7 @@
 #include "BluetoothSerial.h"
 
 
-#define NUM_LEDS 100 // assemblage de 2 guirlandes de 50 leds
+#define NUM_LEDS 150 // assemblage de 3 guirlandes de 50 leds
 #define PIN_LEDS 4
 
 CRGB leds[NUM_LEDS];
