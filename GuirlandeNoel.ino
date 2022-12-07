@@ -1,5 +1,9 @@
 // Guirlande Noël
 // Utilisation avec Arduino ESP32S
+// Ajouter le support de la carte dans les préférences de l'IDE
+// https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+// Ajouter FastLED depuis gestionnaire de bibliothèques
+// Récupérer et installer la biblio BluetoothSerial depuis https://github.com/espressif/arduino-esp32
 // Pin 4 pour piloter le ruban de led
 
 #include "FastLED.h"
@@ -29,8 +33,8 @@ unsigned long dernierTemps = 0;
 
 const int nombreEffet = 15;
 
-int selectedEffect = 11;
-int lastEffect = 11;
+int selectedEffect = 3;
+int lastEffect = 3;
 
 
 void setup()
